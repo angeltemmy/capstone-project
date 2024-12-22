@@ -5,11 +5,11 @@ on:
   workflow_dispatch: {}
   # Triggered on each pull request to main
   push:
-    branches: [ sarah ]
+    branches: [ main ]
 
 jobs:
   producer:
-    runs-on: local-host
+    runs-on: localhost
     #container:
       #image: python:3.9-bookworm
 
@@ -26,14 +26,6 @@ jobs:
           # Fix GIT not liking owner of the checkout dir
           chown -R $(id -u):$(id -g) $PWD
 
-       # Commit and push changes
-      - name: Commit and push changes
-        run: |
-          git config --global user.email "
-          git config --global user.name "GitHub Actions"
-          git add .
-          git commit -m "Update customer data"
-          git push
 
       # Set up Python
       - name: Set up Python
@@ -55,8 +47,10 @@ jobs:
         run: |
           echo "Script ran successfully"
 
-# run linting checks
-      - name: Run linting checks. Exit code 1 if linter failed
-        run: |
-          bash ./linter.sh
+          # Exit with 1 if the script failed
+          exit 1
+
+
+
+
 
