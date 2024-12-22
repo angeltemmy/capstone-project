@@ -19,30 +19,14 @@ jobs:
         with:
           set-safe-directory: true
 
+
       # Fix GIT ownership issues
       - name: Set ownership
         run: |
           # Fix GIT not liking owner of the checkout dir
           chown -R $(id -u):$(id -g) $PWD
 
-      # Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.9
-
-      # Install Python dependencies
-      #- name: Install Python dependencies
-        #run: |
-          #python -m pip install --upgrade pip
-          #pip install -r requirements.txt
-
-      # Run Kafka producer
-      - name: Run Kafka producer script
-        run: |
-          python scripts/customer_producer.py
-
-      # Commit and push changes
+       # Commit and push changes
       - name: Commit and push changes
         run: |
           git config --global user.email "
@@ -50,6 +34,21 @@ jobs:
           git add .
           git commit -m "Update customer data"
           git push
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+
+
+      # Run Kafka producer
+      - name: Run Kafka producer script
+        run: |
+          python scripts/customer_producer.py
+
+
 
       # Check if the script ran successfully
       - name: Check if the script ran successfully
