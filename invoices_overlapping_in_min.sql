@@ -1,1 +1,0 @@
-invoices in overlapping 30-minute

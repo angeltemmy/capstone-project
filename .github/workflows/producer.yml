@@ -1,0 +1,46 @@
+name: Run Producer
+
+on:
+  # Can be manually triggered
+  workflow_dispatch: {}
+  # Triggered on each pull request to main
+  push:
+    branches: [ main ]
+
+jobs:
+  producer:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.9-bookworm
+
+    steps:
+      - name: Checkout code repository in agent
+        uses: actions/checkout@v4
+        with:
+          set-safe-directory: true
+
+      # Fix GIT ownership issues
+      - name: Set ownership
+        run: |
+          # Fix GIT not liking owner of the checkout dir
+          chown -R $(id -u):$(id -g) $PWD
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      # Install Python dependencies
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Run Kafka producer
+      - name: Run Kafka producer script
+        run: |
+          python scripts/customer_producer.py
+        env:
+          KAFKA_BROKER: ${{ secrets.KAFKA_BROKER }}
+          CLIENT_CONFIG: ${{ secrets.CLIENT_CONFIG }}
