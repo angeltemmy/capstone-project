@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
   # Triggered on each pull request to main
   push:
-    branches: [ main ]
+    branches: [ sarah ]
 
 jobs:
   producer:
