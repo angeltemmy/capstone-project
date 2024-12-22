@@ -9,7 +9,7 @@ on:
 
 jobs:
   producer:
-    runs-on: localhost
+    runs-on: ubuntu-latest
     #container:
       #image: python:3.9-bookworm
 
