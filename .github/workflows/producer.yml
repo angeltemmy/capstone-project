@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
   # Triggered on each pull request to main
   push:
-    branches: [ sarah ]
+    branches: [ main ]
 
 jobs:
   producer:
@@ -55,7 +55,7 @@ jobs:
       - name: Check if the script ran successfully
         run: |
           echo "Script ran successfully"
-```
+
 # run linting checks
       - name: Run linting checks. Exit code 1 if linter failed
         run: |
