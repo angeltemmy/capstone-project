@@ -14,25 +14,6 @@ jobs:
       #image: python:3.9-bookworm
 
     steps:
-      - name: Checkout code repository in agent
-        uses: actions/checkout@v4
-        with:
-          set-safe-directory: true
-
-
-      # Fix GIT ownership issues
-      - name: Set ownership
-        run: |
-          # Fix GIT not liking owner of the checkout dir
-          chown -R $(id -u):$(id -g) $PWD
-
-
-      # Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.9
-
 
 
       # Run Kafka producer
