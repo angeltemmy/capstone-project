@@ -1,0 +1,37 @@
+name: Run Producer
+
+on:
+  # Can be manually triggered
+  workflow_dispatch: {}
+  # Triggered on each pull request to main
+  push:
+    branches: [ main ]
+
+jobs:
+  producer:
+    runs-on: ubuntu-latest
+    #container:
+      #image: python:3.9-bookworm
+
+    steps:
+
+
+      # Run Kafka producer
+      - name: Run Kafka producer script
+        run: |
+          python scripts/customer_producer.py
+
+
+
+      # Check if the script ran successfully
+      - name: Check if the script ran successfully
+        run: |
+          echo "Script ran successfully"
+
+          # Exit with 1 if the script failed
+          exit 1
+
+
+
+
+
