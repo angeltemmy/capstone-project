@@ -1,0 +1,11 @@
+clickhouse_cloud:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: default
+      host: mhlp7t8xth.us-west-2.aws.clickhouse.cloud
+      port: 8443 # use 9440 for native
+      user: default
+      password: mT96xZYOikkf.
+      secure: True

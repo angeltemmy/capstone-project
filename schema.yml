@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: default
+    tables:
+      - name: bank_details
+
+      - name: payments
+
+      - name: customer
+      - name: discounts
+
+      - name: invoices
+      - name: payment_logs
+      - name: payment_methods
+      - name: payment_status
+      - name: invoice_details
+      - name: product
+      - name: shipping_details
+      - name: taxrates
+
+

@@ -7,15 +7,22 @@ import random
 from faker import Faker
 sys.path.append('path_to_common_module_directory')
 from config_reader import read_config
+from datetime import datetime, timedelta
 
 fake = Faker()
+def generate_random_date_in_last_10_years():
+    today = datetime.today()
+    start_date = today - timedelta(days=365 * 10)  # 10 years ago
+    random_date = start_date + timedelta(days=random.randint(0, 365 * 10))
+    return random_date.isoformat()
 
 def generate_payment(invoice_id):
+
     return {
         "PaymentID": fake.unique.random_int(1, 30000000),
         "Invoices_InvoiceID": invoice_id,
         "PaymentAmount": round(random.uniform(100, 5000), 2),
-        "PaymentDate": fake.date_this_month().isoformat(),
+        "PaymentDate": generate_random_date_in_last_10_years(),
         "PaymentReference": fake.uuid4(),
         "PaymentStatus_StatusID": random.randint(1, 3),
         "PaymentMethods_MethodID": random.randint(1, 5)

@@ -1,0 +1,223 @@
+[0m15:19:42.804358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001815C9C8130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001815F2BFC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001815F2BFFD0>]}
+
+
+============================== 15:19:42.808358 | 4f1733eb-5497-43b8-98b5-6ab17f7d079d ==============================
+[0m15:19:42.808358 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:19:42.809358 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\angel_buvawpg\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init billing_system', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:19:42.825486 [debug] [MainThread]: Starter project path: C:\Users\angel_buvawpg\anaconda3\envs\my_etl\lib\site-packages\dbt\include\starter_project
+[0m15:19:42.838576 [info ] [MainThread]: 
+Your new dbt project "billing_system" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:19:42.842033 [info ] [MainThread]: Setting up your profile.
+[0m15:19:50.289234 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m15:19:50.291467 [debug] [MainThread]: Command `dbt init` succeeded at 15:19:50.291467 after 7.55 seconds
+[0m15:19:50.291467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001815C9C8130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001815F2BFF70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001815F268970>]}
+[0m15:19:50.291467 [debug] [MainThread]: Flushing usage events
+[0m15:19:50.820270 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:27:13.236904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0BDD5E190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0C06583D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0C06582B0>]}
+
+
+============================== 15:27:13.243903 | 03b627cc-aef8-49bd-9dd2-ea2833a1cd36 ==============================
+[0m15:27:13.243903 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:27:13.244941 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init billing_system', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:27:13.256917 [info ] [MainThread]: A project called billing_system already exists here.
+[0m15:27:13.258976 [debug] [MainThread]: Command `dbt init` succeeded at 15:27:13.257933 after 0.11 seconds
+[0m15:27:13.258976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0BDD5E190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0C063D460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0C06581C0>]}
+[0m15:27:13.259922 [debug] [MainThread]: Flushing usage events
+[0m15:27:13.959759 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:28:28.780815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001896716B130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018969A5DC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018969A5DFD0>]}
+
+
+============================== 15:28:28.783831 | f0f57ff8-cf57-4bb7-8960-4cf07c4cdea1 ==============================
+[0m15:28:28.783831 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:28:28.784830 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init billing', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:28:28.793184 [debug] [MainThread]: Starter project path: C:\Users\angel_buvawpg\anaconda3\envs\my_etl\lib\site-packages\dbt\include\starter_project
+[0m15:28:28.811221 [info ] [MainThread]: 
+Your new dbt project "billing" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:28:28.817221 [info ] [MainThread]: Setting up your profile.
+[0m15:28:32.208946 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m15:28:32.212010 [debug] [MainThread]: Command `dbt init` succeeded at 15:28:32.210933 after 3.50 seconds
+[0m15:28:32.212948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001896716B130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018969A5DEE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018969A3C9D0>]}
+[0m15:28:32.212948 [debug] [MainThread]: Flushing usage events
+[0m15:28:32.689833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:31:50.006902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9E6C83160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9E957FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9E957FD60>]}
+
+
+============================== 15:31:50.012905 | c96bddf1-bbc7-4468-8480-fbe482a9772d ==============================
+[0m15:31:50.012905 [info ] [MainThread]: Running with dbt=1.8.9
+[0m15:31:50.013901 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:31:50.023894 [info ] [MainThread]: dbt version: 1.8.9
+[0m15:31:50.024898 [info ] [MainThread]: python version: 3.9.19
+[0m15:31:50.025897 [info ] [MainThread]: python path: C:\Users\angel_buvawpg\anaconda3\envs\my_etl\python.exe
+[0m15:31:50.026895 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m15:31:50.113893 [info ] [MainThread]: Using profiles dir at C:\Git\capstone\capstone-project
+[0m15:31:50.118019 [info ] [MainThread]: Using profiles.yml file at C:\Git\capstone\capstone-project\profiles.yml
+[0m15:31:50.120033 [info ] [MainThread]: Using dbt_project.yml file at C:\Git\capstone\capstone-project\dbt_project.yml
+[0m15:31:50.121183 [info ] [MainThread]: adapter type: clickhouse
+[0m15:31:50.122197 [info ] [MainThread]: adapter version: 1.8.6
+[0m15:31:50.123195 [info ] [MainThread]: Configuration:
+[0m15:31:50.124198 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:31:50.125215 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:31:50.127262 [info ] [MainThread]: Required dependencies:
+[0m15:31:50.128231 [debug] [MainThread]: Executing "git --help"
+[0m15:31:50.171923 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:31:50.172920 [debug] [MainThread]: STDERR: "b''"
+[0m15:31:50.173920 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:31:50.175984 [info ] [MainThread]: Connection:
+[0m15:31:50.176948 [info ] [MainThread]:   driver: None
+[0m15:31:50.177958 [info ] [MainThread]:   host: mhlp7t8xth.us-west-2.aws.clickhouse.cloud
+[0m15:31:50.178980 [info ] [MainThread]:   port: 8443
+[0m15:31:50.180005 [info ] [MainThread]:   user: default
+[0m15:31:50.181941 [info ] [MainThread]:   schema: default
+[0m15:31:50.182928 [info ] [MainThread]:   retries: 1
+[0m15:31:50.182928 [info ] [MainThread]:   database_engine: None
+[0m15:31:50.183939 [info ] [MainThread]:   cluster_mode: False
+[0m15:31:50.184937 [info ] [MainThread]:   secure: True
+[0m15:31:50.185992 [info ] [MainThread]:   verify: True
+[0m15:31:50.186973 [info ] [MainThread]:   connect_timeout: 10
+[0m15:31:50.188015 [info ] [MainThread]:   send_receive_timeout: 300
+[0m15:31:50.188942 [info ] [MainThread]:   sync_request_timeout: 5
+[0m15:31:50.189919 [info ] [MainThread]:   compress_block_size: 1048576
+[0m15:31:50.189919 [info ] [MainThread]:   compression: 
+[0m15:31:50.191996 [info ] [MainThread]:   check_exchange: True
+[0m15:31:50.192970 [info ] [MainThread]:   custom_settings: None
+[0m15:31:50.193974 [info ] [MainThread]:   use_lw_deletes: False
+[0m15:31:50.194940 [info ] [MainThread]:   allow_automatic_deduplication: False
+[0m15:31:50.195942 [info ] [MainThread]:   tcp_keepalive: False
+[0m15:31:50.197925 [info ] [MainThread]: Registered adapter: clickhouse=1.8.6
+[0m15:31:50.449801 [debug] [MainThread]: Acquiring new clickhouse connection 'debug'
+[0m15:31:50.450810 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:31:53.882589 [debug] [MainThread]: dbt_clickhouse adapter: On debug: select 1 as id...
+[0m15:31:53.953444 [debug] [MainThread]: dbt_clickhouse adapter: SQL status: OK in 0.07 seconds
+[0m15:31:53.985749 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:31:53.987748 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:31:53.988749 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Git\capstone\capstone-project\dbt_project.yml> not found
+
+[0m15:31:53.990755 [debug] [MainThread]: Command `dbt debug` failed at 15:31:53.990755 after 4.06 seconds
+[0m15:31:53.991748 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:31:53.991748 [debug] [MainThread]: On debug: Close
+[0m15:31:53.992749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9E6C83160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9E9630280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9E9629B50>]}
+[0m15:31:53.992749 [debug] [MainThread]: Flushing usage events
+[0m15:31:54.479222 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:20:56.043362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F99C2B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F9C521C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F9C521F40>]}
+
+
+============================== 16:20:56.049362 | d926b82b-f0c7-4c77-969d-bdb80af84e4c ==============================
+[0m16:20:56.049362 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:20:56.050362 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Git\\capstone\\capstone-project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init billing_system', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:56.063372 [info ] [MainThread]: Setting up your profile.
+[0m16:21:07.542180 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:21:07.545131 [debug] [MainThread]: Command `dbt init` succeeded at 16:21:07.544133 after 11.56 seconds
+[0m16:21:07.545131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F99C2B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F9C521EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F9C4FF070>]}
+[0m16:21:07.546131 [debug] [MainThread]: Flushing usage events
+[0m16:21:08.046423 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:22:15.550060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F255CB7100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2585B1C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2585B1F40>]}
+
+
+============================== 16:22:15.553053 | 44e2c32d-037d-4aa7-96fa-913be6d63336 ==============================
+[0m16:22:15.553053 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:22:15.555052 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Git\\capstone\\capstone-project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init billing_system', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:22:15.571619 [info ] [MainThread]: Setting up your profile.
+[0m16:22:50.923765 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:22:50.925719 [debug] [MainThread]: Command `dbt init` succeeded at 16:22:50.925719 after 35.44 seconds
+[0m16:22:50.925719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F255CB7100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2585B1EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F25858F070>]}
+[0m16:22:50.926757 [debug] [MainThread]: Flushing usage events
+[0m16:22:51.446637 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:00.146345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002249594E190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022498253AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022498253D30>]}
+
+
+============================== 16:23:00.150339 | c4d347b3-15ee-40b6-be13-eb0679f984e0 ==============================
+[0m16:23:00.150339 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:23:00.151339 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Git\\capstone\\capstone-project\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init billing', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:00.161340 [info ] [MainThread]: Setting up your profile.
+[0m16:23:08.897118 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:23:08.900124 [debug] [MainThread]: Command `dbt init` succeeded at 16:23:08.899125 after 8.81 seconds
+[0m16:23:08.900124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002249594E190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022498253DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022498296640>]}
+[0m16:23:08.901124 [debug] [MainThread]: Flushing usage events
+[0m16:23:09.320196 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:38.196170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F21F038130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F221932BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F221932FD0>]}
+
+
+============================== 16:23:38.198170 | 892fbc54-4592-46d6-9470-649f4dd81b4a ==============================
+[0m16:23:38.198170 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:23:38.200177 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Git\\capstone\\capstone-project', 'log_path': 'C:\\Git\\capstone\\capstone-project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init billing_system1', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:38.210170 [info ] [MainThread]: Setting up your profile.
+[0m16:27:11.016678 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:27:11.018990 [debug] [MainThread]: Command `dbt init` succeeded at 16:27:11.018990 after 212.88 seconds
+[0m16:27:11.019993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F21F038130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F221932F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2218FA520>]}
+[0m16:27:11.021063 [debug] [MainThread]: Flushing usage events
+[0m16:27:11.545437 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:28:07.963660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022318F98100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002231B889C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002231B889F40>]}
+
+
+============================== 16:28:07.967622 | d6878502-0138-46e9-9c3c-13380bb33a10 ==============================
+[0m16:28:07.967622 [info ] [MainThread]: Running with dbt=1.8.9
+[0m16:28:07.968619 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\angel_buvawpg\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init billing_system', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:07.991607 [debug] [MainThread]: Starter project path: C:\Users\angel_buvawpg\anaconda3\envs\my_etl\lib\site-packages\dbt\include\starter_project
+[0m16:28:08.011697 [info ] [MainThread]: 
+Your new dbt project "billing_system" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:28:08.019754 [info ] [MainThread]: Setting up your profile.
+[0m16:28:11.650805 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:28:11.652807 [debug] [MainThread]: Command `dbt init` succeeded at 16:28:11.652807 after 3.75 seconds
+[0m16:28:11.652807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022318F98100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002231B889EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002231B8EEFD0>]}
+[0m16:28:11.653836 [debug] [MainThread]: Flushing usage events
+[0m16:28:12.130919 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:57:24.228373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30A303160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30CBFDB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30CBFDD60>]}
+
+
+============================== 18:57:24.231372 | fc0f54ce-38a5-449f-b07e-b5b9c003cbdc ==============================
+[0m18:57:24.231372 [info ] [MainThread]: Running with dbt=1.8.9
+[0m18:57:24.233373 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\angel_buvawpg\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m18:57:24.234373 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Git\capstone\capstone-project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:57:24.237372 [debug] [MainThread]: Command `dbt deps` failed at 18:57:24.236373 after 0.07 seconds
+[0m18:57:24.237372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30A303160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30CBFD520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F30CBFD4F0>]}
+[0m18:57:24.238384 [debug] [MainThread]: Flushing usage events
+[0m18:57:24.723907 [debug] [MainThread]: An error was encountered while trying to flush usage events

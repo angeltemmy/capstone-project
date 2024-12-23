@@ -3,10 +3,19 @@ import sys
 from confluent_kafka import Producer
 import json
 import time
+import random
 from faker import Faker
 sys.path.append('path_to_common_module_directory')
 from config_reader import read_config
 fake = Faker()
+from datetime import datetime, timedelta
+
+
+def generate_random_date_in_last_10_years():
+    today = datetime.today()
+    start_date = today - timedelta(days=365 * 10)  # 10 years ago
+    random_date = start_date + timedelta(days=random.randint(0, 365 * 10))
+    return random_date.isoformat()
 
 def generate_shipping_details(invoice_id):
     fake.unique.clear()
@@ -14,8 +23,8 @@ def generate_shipping_details(invoice_id):
         "ShippingID": fake.unique.random_int(1, 5000000),
         "InvoiceID": invoice_id,
         "Address": fake.address().replace("\n", " "),
-        "ShippingDate": fake.date_this_year().isoformat(),
-        "EstimatedArrival": fake.future_date(end_date="+30d").isoformat()
+        "ShippingDate": generate_random_date_in_last_10_years(),
+        "EstimatedArrival": generate_random_date_in_last_10_years()
     }
 
 def json_serializer(data):

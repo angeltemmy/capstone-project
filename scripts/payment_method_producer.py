@@ -13,11 +13,21 @@ fake = Faker()
 
 def generate_payment_method():
     fake.unique.clear()
+    payment_method_mapping = {
+        1: "Credit Card",
+        2: "PayPal",
+        3: "Bank Transfer",
+        4: "Cash",
+        5: "Cryptocurrency"
+    }
+    MethodID = random.choice(list(payment_method_mapping.keys()))
+    MethodName = payment_method_mapping[MethodID]
     return {
         "MethodID": fake.unique.random_int(1, 100000),
         "MethodName": random.choice(["Credit Card", "PayPal", "Bank Transfer", "Cash", "Cryptocurrency"]),
         "Description": fake.text(max_nb_chars=50)
     }
+
 
 def json_serializer(data):
     return json.dumps(data).encode("utf-8")

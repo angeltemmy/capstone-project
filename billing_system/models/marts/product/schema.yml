@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: default
+    tables:
+      - name: product
+    description: "Product details produced by the product producer"

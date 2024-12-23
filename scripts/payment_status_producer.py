@@ -13,11 +13,21 @@ fake = Faker()
 
 def generate_payment_status():
     fake.unique.clear()
-    return {
-        "StatusID": fake.random_int(1, 5),
-        "StatusName": random.choice(["Pending", "Completed", "Failed", "Processing"]),
-        "Description": fake.text(max_nb_chars=100)
+    status_mapping = {
+        1: "Pending",
+        2: "Completed",
+        3: "Failed",
+        4: "Processing"
     }
+    status_id = random.choice(list(status_mapping.keys()))
+    status_name = status_mapping[status_id]
+    return {
+        "StatusID": status_id,
+        "StatusName": status_name,
+        "Description": fake.text(max_nb_chars=30)
+    }
+
+
 
 def json_serializer(data):
     return json.dumps(data).encode("utf-8")

@@ -1,0 +1,54 @@
+name: deploy container
+on:
+  # Can be manually triggered
+  workflow_dispatch: {}
+  # Trigger a deploy every time there is a merge to main
+  push:
+    branches:
+    - main
+
+env:
+  # Set this to your AWS region, e.g. us-east-1
+  AWS_REGION: us-east-1
+  # Set this to the URI of your ECR repo
+  ECR_REPO_URI: <account-id>.dkr.ecr.<aws-region>.amazonaws.com/<repo-name>
+  # Set this to the AWS role Github Actions will assume
+  AWS_ROLE_TO_ASSUME: arn:aws:iam::<account-id>:role/<role-name>
+
+jobs:
+  deploy_to_ecr:
+    runs-on: ubuntu-latest
+    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout code repository in agent
+        uses: actions/checkout@v4
+        with:
+          set-safe-directory: true
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_TO_ASSUME }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push image to Amazon ECR
+        id: build-image
+        working-directory: ./transform/dbt
+        env:
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          # Build a docker container and
+          # push it to ECR so that it can
+          # be deployed to ECS.
+          echo "Target repo: ${ECR_REPO_URI}:${IMAGE_TAG}"
+          docker build -t ${ECR_REPO_URI}:${IMAGE_TAG} .
+          docker push ${ECR_REPO_URI}:${IMAGE_TAG}
+          echo "image=${ECR_REPO_URI}:${IMAGE_TAG}" >> $GITHUB_OUTPUT

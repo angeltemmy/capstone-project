@@ -8,13 +8,19 @@ from faker import Faker
 sys.path.append('path_to_common_module_directory')
 from config_reader import read_config
 fake = Faker()
+from datetime import datetime, timedelta
 
+def generate_random_date_in_last_10_years():
+    today = datetime.today()
+    start_date = today - timedelta(days=365 * 10)  # 10 years ago
+    random_date = start_date + timedelta(days=random.randint(0, 365 * 10))
+    return random_date.isoformat()
 def generate_invoice(customer_id):
     fake.unique.clear()
     return {
         "InvoiceID": fake.unique.random_int(1, 2000),
         "CustomerID": customer_id,
-        "InvoiceDate": fake.date_this_year().isoformat(),
+        "InvoiceDate": generate_random_date_in_last_10_years(),
         "DueDate": fake.date_this_year().isoformat(),
         "TotalAmount": round(random.uniform(100, 5000), 2)
     }
